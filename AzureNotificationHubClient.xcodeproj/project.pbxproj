@@ -10,6 +10,16 @@
 		1C4213A61C6C482800B70497 /* AzureNotificationHubClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C4213A51C6C482800B70497 /* AzureNotificationHubClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1C4213AD1C6C482900B70497 /* AzureNotificationHubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4213A21C6C482800B70497 /* AzureNotificationHubClient.framework */; };
 		1C4213B21C6C482900B70497 /* AzureNotificationHubClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4213B11C6C482900B70497 /* AzureNotificationHubClientTests.swift */; };
+		1C4213C31C6C494B00B70497 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4213C21C6C494B00B70497 /* AppDelegate.swift */; };
+		1C4213C51C6C494B00B70497 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4213C41C6C494B00B70497 /* ViewController.swift */; };
+		1C4213C81C6C494B00B70497 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4213C61C6C494B00B70497 /* Main.storyboard */; };
+		1C4213CA1C6C494B00B70497 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4213C91C6C494B00B70497 /* Assets.xcassets */; };
+		1C4213CD1C6C494B00B70497 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4213CB1C6C494B00B70497 /* LaunchScreen.storyboard */; };
+		1C4213D81C6C494B00B70497 /* testappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4213D71C6C494B00B70497 /* testappTests.swift */; };
+		1C4213E31C6C494B00B70497 /* testappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4213E21C6C494B00B70497 /* testappUITests.swift */; };
+		1C4213EE1C6C496100B70497 /* AzureNotificationHubClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4213A21C6C482800B70497 /* AzureNotificationHubClient.framework */; };
+		1C4213EF1C6C496100B70497 /* AzureNotificationHubClient.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4213A21C6C482800B70497 /* AzureNotificationHubClient.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1C4213F41C6C498300B70497 /* Hub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4213F31C6C498300B70497 /* Hub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -20,7 +30,42 @@
 			remoteGlobalIDString = 1C4213A11C6C482800B70497;
 			remoteInfo = AzureNotificationHubClient;
 		};
+		1C4213D41C6C494B00B70497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C4213991C6C482800B70497 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C4213BF1C6C494B00B70497;
+			remoteInfo = testapp;
+		};
+		1C4213DF1C6C494B00B70497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C4213991C6C482800B70497 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C4213BF1C6C494B00B70497;
+			remoteInfo = testapp;
+		};
+		1C4213F01C6C496100B70497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C4213991C6C482800B70497 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C4213A11C6C482800B70497;
+			remoteInfo = AzureNotificationHubClient;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1C4213F21C6C496100B70497 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1C4213EF1C6C496100B70497 /* AzureNotificationHubClient.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1C4213A21C6C482800B70497 /* AzureNotificationHubClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AzureNotificationHubClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +74,20 @@
 		1C4213AC1C6C482900B70497 /* AzureNotificationHubClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AzureNotificationHubClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4213B11C6C482900B70497 /* AzureNotificationHubClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AzureNotificationHubClientTests.swift; sourceTree = "<group>"; };
 		1C4213B31C6C482900B70497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4213C01C6C494B00B70497 /* testapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4213C21C6C494B00B70497 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1C4213C41C6C494B00B70497 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1C4213C71C6C494B00B70497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C4213C91C6C494B00B70497 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C4213CC1C6C494B00B70497 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C4213CE1C6C494B00B70497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4213D31C6C494B00B70497 /* testappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4213D71C6C494B00B70497 /* testappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testappTests.swift; sourceTree = "<group>"; };
+		1C4213D91C6C494B00B70497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4213DE1C6C494B00B70497 /* testappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C4213E21C6C494B00B70497 /* testappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testappUITests.swift; sourceTree = "<group>"; };
+		1C4213E41C6C494B00B70497 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4213F31C6C498300B70497 /* Hub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hub.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +106,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C4213BD1C6C494B00B70497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4213EE1C6C496100B70497 /* AzureNotificationHubClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4213D01C6C494B00B70497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4213DB1C6C494B00B70497 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -55,6 +136,9 @@
 			children = (
 				1C4213A41C6C482800B70497 /* AzureNotificationHubClient */,
 				1C4213B01C6C482900B70497 /* AzureNotificationHubClientTests */,
+				1C4213C11C6C494B00B70497 /* testapp */,
+				1C4213D61C6C494B00B70497 /* testappTests */,
+				1C4213E11C6C494B00B70497 /* testappUITests */,
 				1C4213A31C6C482800B70497 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +148,9 @@
 			children = (
 				1C4213A21C6C482800B70497 /* AzureNotificationHubClient.framework */,
 				1C4213AC1C6C482900B70497 /* AzureNotificationHubClientTests.xctest */,
+				1C4213C01C6C494B00B70497 /* testapp.app */,
+				1C4213D31C6C494B00B70497 /* testappTests.xctest */,
+				1C4213DE1C6C494B00B70497 /* testappUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,6 +160,7 @@
 			children = (
 				1C4213A51C6C482800B70497 /* AzureNotificationHubClient.h */,
 				1C4213A71C6C482800B70497 /* Info.plist */,
+				1C4213F31C6C498300B70497 /* Hub.swift */,
 			);
 			path = AzureNotificationHubClient;
 			sourceTree = "<group>";
@@ -84,6 +172,37 @@
 				1C4213B31C6C482900B70497 /* Info.plist */,
 			);
 			path = AzureNotificationHubClientTests;
+			sourceTree = "<group>";
+		};
+		1C4213C11C6C494B00B70497 /* testapp */ = {
+			isa = PBXGroup;
+			children = (
+				1C4213C21C6C494B00B70497 /* AppDelegate.swift */,
+				1C4213C41C6C494B00B70497 /* ViewController.swift */,
+				1C4213C61C6C494B00B70497 /* Main.storyboard */,
+				1C4213C91C6C494B00B70497 /* Assets.xcassets */,
+				1C4213CB1C6C494B00B70497 /* LaunchScreen.storyboard */,
+				1C4213CE1C6C494B00B70497 /* Info.plist */,
+			);
+			path = testapp;
+			sourceTree = "<group>";
+		};
+		1C4213D61C6C494B00B70497 /* testappTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C4213D71C6C494B00B70497 /* testappTests.swift */,
+				1C4213D91C6C494B00B70497 /* Info.plist */,
+			);
+			path = testappTests;
+			sourceTree = "<group>";
+		};
+		1C4213E11C6C494B00B70497 /* testappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C4213E21C6C494B00B70497 /* testappUITests.swift */,
+				1C4213E41C6C494B00B70497 /* Info.plist */,
+			);
+			path = testappUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +255,61 @@
 			productReference = 1C4213AC1C6C482900B70497 /* AzureNotificationHubClientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1C4213BF1C6C494B00B70497 /* testapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C4213E51C6C494B00B70497 /* Build configuration list for PBXNativeTarget "testapp" */;
+			buildPhases = (
+				1C4213BC1C6C494B00B70497 /* Sources */,
+				1C4213BD1C6C494B00B70497 /* Frameworks */,
+				1C4213BE1C6C494B00B70497 /* Resources */,
+				1C4213F21C6C496100B70497 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C4213F11C6C496100B70497 /* PBXTargetDependency */,
+			);
+			name = testapp;
+			productName = testapp;
+			productReference = 1C4213C01C6C494B00B70497 /* testapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C4213D21C6C494B00B70497 /* testappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C4213E81C6C494B00B70497 /* Build configuration list for PBXNativeTarget "testappTests" */;
+			buildPhases = (
+				1C4213CF1C6C494B00B70497 /* Sources */,
+				1C4213D01C6C494B00B70497 /* Frameworks */,
+				1C4213D11C6C494B00B70497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C4213D51C6C494B00B70497 /* PBXTargetDependency */,
+			);
+			name = testappTests;
+			productName = testappTests;
+			productReference = 1C4213D31C6C494B00B70497 /* testappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C4213DD1C6C494B00B70497 /* testappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C4213EB1C6C494B00B70497 /* Build configuration list for PBXNativeTarget "testappUITests" */;
+			buildPhases = (
+				1C4213DA1C6C494B00B70497 /* Sources */,
+				1C4213DB1C6C494B00B70497 /* Frameworks */,
+				1C4213DC1C6C494B00B70497 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C4213E01C6C494B00B70497 /* PBXTargetDependency */,
+			);
+			name = testappUITests;
+			productName = testappUITests;
+			productReference = 1C4213DE1C6C494B00B70497 /* testappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -152,6 +326,17 @@
 					1C4213AB1C6C482900B70497 = {
 						CreatedOnToolsVersion = 7.2;
 					};
+					1C4213BF1C6C494B00B70497 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					1C4213D21C6C494B00B70497 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1C4213BF1C6C494B00B70497;
+					};
+					1C4213DD1C6C494B00B70497 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 1C4213BF1C6C494B00B70497;
+					};
 				};
 			};
 			buildConfigurationList = 1C42139C1C6C482800B70497 /* Build configuration list for PBXProject "AzureNotificationHubClient" */;
@@ -160,6 +345,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1C4213981C6C482800B70497;
 			productRefGroup = 1C4213A31C6C482800B70497 /* Products */;
@@ -168,6 +354,9 @@
 			targets = (
 				1C4213A11C6C482800B70497 /* AzureNotificationHubClient */,
 				1C4213AB1C6C482900B70497 /* AzureNotificationHubClientTests */,
+				1C4213BF1C6C494B00B70497 /* testapp */,
+				1C4213D21C6C494B00B70497 /* testappTests */,
+				1C4213DD1C6C494B00B70497 /* testappUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +376,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C4213BE1C6C494B00B70497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4213CD1C6C494B00B70497 /* LaunchScreen.storyboard in Resources */,
+				1C4213CA1C6C494B00B70497 /* Assets.xcassets in Resources */,
+				1C4213C81C6C494B00B70497 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4213D11C6C494B00B70497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4213DC1C6C494B00B70497 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -194,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C4213F41C6C498300B70497 /* Hub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +419,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1C4213BC1C6C494B00B70497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4213C51C6C494B00B70497 /* ViewController.swift in Sources */,
+				1C4213C31C6C494B00B70497 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4213CF1C6C494B00B70497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4213D81C6C494B00B70497 /* testappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C4213DA1C6C494B00B70497 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4213E31C6C494B00B70497 /* testappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -213,7 +452,41 @@
 			target = 1C4213A11C6C482800B70497 /* AzureNotificationHubClient */;
 			targetProxy = 1C4213AE1C6C482900B70497 /* PBXContainerItemProxy */;
 		};
+		1C4213D51C6C494B00B70497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C4213BF1C6C494B00B70497 /* testapp */;
+			targetProxy = 1C4213D41C6C494B00B70497 /* PBXContainerItemProxy */;
+		};
+		1C4213E01C6C494B00B70497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C4213BF1C6C494B00B70497 /* testapp */;
+			targetProxy = 1C4213DF1C6C494B00B70497 /* PBXContainerItemProxy */;
+		};
+		1C4213F11C6C496100B70497 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C4213A11C6C482800B70497 /* AzureNotificationHubClient */;
+			targetProxy = 1C4213F01C6C496100B70497 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C4213C61C6C494B00B70497 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C4213C71C6C494B00B70497 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C4213CB1C6C494B00B70497 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C4213CC1C6C494B00B70497 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1C4213B41C6C482900B70497 /* Debug */ = {
@@ -308,6 +581,9 @@
 		1C4213B71C6C482900B70497 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -317,13 +593,18 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.AzureNotificationHubClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		1C4213B81C6C482900B70497 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -333,6 +614,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.AzureNotificationHubClient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -354,6 +636,82 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.AzureNotificationHubClientTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1C4213E61C6C494B00B70497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = testapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.testapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1C4213E71C6C494B00B70497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = testapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.testapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1C4213E91C6C494B00B70497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.testappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testapp.app/testapp";
+			};
+			name = Debug;
+		};
+		1C4213EA1C6C494B00B70497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = testappTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.testappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/testapp.app/testapp";
+			};
+			name = Release;
+		};
+		1C4213EC1C6C494B00B70497 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = testappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.testappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = testapp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1C4213ED1C6C494B00B70497 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = testappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mnespor.testappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = testapp;
+				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
@@ -382,6 +740,30 @@
 			buildConfigurations = (
 				1C4213BA1C6C482900B70497 /* Debug */,
 				1C4213BB1C6C482900B70497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1C4213E51C6C494B00B70497 /* Build configuration list for PBXNativeTarget "testapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C4213E61C6C494B00B70497 /* Debug */,
+				1C4213E71C6C494B00B70497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1C4213E81C6C494B00B70497 /* Build configuration list for PBXNativeTarget "testappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C4213E91C6C494B00B70497 /* Debug */,
+				1C4213EA1C6C494B00B70497 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1C4213EB1C6C494B00B70497 /* Build configuration list for PBXNativeTarget "testappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C4213EC1C6C494B00B70497 /* Debug */,
+				1C4213ED1C6C494B00B70497 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
