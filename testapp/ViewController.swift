@@ -3,7 +3,7 @@
 //  testapp
 //
 //  Created by Matthew Nespor on 2/10/16.
-//  Copyright © 2016 Matthew Nespor. All rights reserved.
+//  Copyright © 2016 Matthew Nespor.
 //
 
 import UIKit
