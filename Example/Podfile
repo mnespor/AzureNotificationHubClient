@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'AzureNotificationHubClient_Example', :exclusive => true do
+  pod 'AzureNotificationHubClient', :path => '../'
+end
+
+target 'AzureNotificationHubClient_Tests', :exclusive => true do
+  pod 'AzureNotificationHubClient', :path => '../'
+
+  
+end
