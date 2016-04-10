@@ -15,7 +15,12 @@ public class ConnectionString {
     public static func string(endpoint: NSURL,
                               issuer: String,
                               issuerSecret: String) -> String {
-        return ""
+        let endpointUri = HubHelper.url(endpoint, withScheme: "sb")?.absoluteString ?? ""
+        if endpointUri.lowercaseString.hasPrefix("endpoint=") {
+            return "\(endpointUri);SharedSecretIssuer=\(issuer);SharedSecretValue=\(issuerSecret)"
+        }
+
+        return "Endpoint=\(endpointUri);SharedSecretIssuer=\(issuer);SharedSecretValue=\(issuerSecret)"
     }
 
     public static func string(endpoint: NSURL,
@@ -35,6 +40,11 @@ public class ConnectionString {
     public static func string(endpoint: NSURL,
                               sharedAccessKeyName: String,
                               accessSecret: String) -> String {
-        return ""
+        let endpointUri = HubHelper.url(endpoint, withScheme: "sb")?.absoluteString ?? ""
+        if endpointUri.lowercaseString.hasPrefix("endpoint=") {
+            return "\(endpointUri);SharedAccessKeyName=\(sharedAccessKeyName);SharedAccessKey=\(accessSecret)"
+        }
+
+        return "Endpoint=\(endpointUri);SharedAccessKeyName=\(sharedAccessKeyName);SharedAccessKey=\(accessSecret)"
     }
 }

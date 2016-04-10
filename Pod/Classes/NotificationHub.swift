@@ -20,7 +20,7 @@ public class NotificationHub {
     public func registerNative(deviceToken: NSData,
                                tags: Set<String>,
                                completion: ((ErrorType?) -> Void)?) {
-
+        completion?(nil)
     }
 
     public func registerTemplate(deviceToken: NSData,
@@ -29,18 +29,18 @@ public class NotificationHub {
                           expiryTemplate: String,
                           tags: Set<String>,
                           completion: ((ErrorType?) -> Void)?) {
-
+        completion?(nil)
     }
 
     public func unregisterNative(completion: ((ErrorType?) -> Void)?) {
-
+        completion?(nil)
     }
 
     public func unregisterTemplate(name: String, completion: ((ErrorType?) -> Void)?) {
-
+        completion?(nil)
     }
 
-    public func unregisterAll(deviceToken: NSData, completion: ((ErrorType?) -> Void)) {
-
+    public func unregisterAll(deviceToken: NSData, completion: ((ErrorType?) -> Void)?) {
+        completion?(nil)
     }
 }
