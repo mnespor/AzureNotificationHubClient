@@ -15,11 +15,12 @@ class TokenProvider {
     private let sharedAccessKey: String?
     private let sharedAccessKeyName: String?
     private let sharedSecret: String?
-    private let sharedSecretIssurer: String?
+    private let sharedSecretIssuer: String?
     private let stsHostName: NSURL
 
     init?(connectionDictionary: [String: String]) {
-        guard let endpoint = TokenProvider.tryUrl(connectionDictionary["endpoint"]) else {
+        guard let endpoint = TokenProvider.tryUrl(connectionDictionary["endpoint"])
+            where endpoint.host != nil else {
             return nil
         }
 
@@ -29,6 +30,16 @@ class TokenProvider {
         }
 
         self.stsHostName = stsHostName
+        self.sharedAccessKey = connectionDictionary["sharedaccesskey"]
+        self.sharedAccessKeyName = connectionDictionary["sharedaccesskeyname"]
+        self.sharedSecret = connectionDictionary["sharedsecretvalue"]
+        self.sharedSecretIssuer = connectionDictionary["sharedsecretissuer"]
+
+        if (sharedAccessKey == nil || sharedAccessKeyName == nil) && sharedSecret == nil {
+            print("Security information is missing in connectionString.")
+            return nil
+        }
+
 
     }
 
