@@ -8,9 +8,10 @@
 
 import Foundation
 
+// swiftlint:disable line_length
 public class ConnectionString {
-    static let defaultListenSasRuleName = "DefaultListenSharedAccessSignature";
-    static let defaultFullSasRuleName = "DefaultFullSharedAccessSignature";
+    static let defaultListenSasRuleName = "DefaultListenSharedAccessSignature"
+    static let defaultFullSasRuleName = "DefaultFullSharedAccessSignature"
 
     public static func string(endpoint: NSURL,
                               issuer: String,

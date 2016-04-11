@@ -14,8 +14,8 @@ public class NotificationHub {
     let tokenProvider: TokenProvider
     let storageManager: LocalStorage
 
-    let apiVersion = "2013-04";
-    let userAgentTemplate = "NOTIFICATIONHUBS/%@(api-origin=IosSdk; os=%@; os_version=%@;)";
+    let apiVersion = "2013-04"
+    let userAgentTemplate = "NOTIFICATIONHUBS/%@(api-origin=IosSdk; os=%@; os_version=%@;)"
 
     public static var version: String {
         return "v0.1"
@@ -23,6 +23,7 @@ public class NotificationHub {
 
     public init?(connectionString: String, notificationHubPath: String) {
         let connectionInfo = HubHelper.parseConnectionString(connectionString)
+        // swiftlint:disable opening_brace
         guard let
             endpointPath = connectionInfo["endpoint"],
             endpoint = NSURL(string: endpointPath) where endpoint.host != nil else
@@ -30,6 +31,7 @@ public class NotificationHub {
             print("Endpoint is missing or is not in URL format in connectionString.")
             return nil
         }
+        // swiftlint:enable opening_brace
 
         self.path = notificationHubPath
         self.endpoint = endpoint
@@ -43,6 +45,7 @@ public class NotificationHub {
         completion?(nil)
     }
 
+    // swiftlint:disable function_parameter_count
     public func registerTemplate(deviceToken: NSData,
                           name: String,
                           jsonBodyTemplate: String,
@@ -51,6 +54,7 @@ public class NotificationHub {
                           completion: ((ErrorType?) -> Void)?) {
         completion?(nil)
     }
+    // swiftlint:enable function_parameter_count
 
     public func unregisterNative(completion: ((ErrorType?) -> Void)?) {
         completion?(nil)

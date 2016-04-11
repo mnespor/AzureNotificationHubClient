@@ -53,7 +53,8 @@ internal class HubHelper {
             let keyName = keyValuePairs[0].lowercaseString
             var keyValue = keyValuePairs[1]
             if keyName == "endpoint" {
-                keyValue = HubHelper.url(NSURL(string: keyValue)!, withScheme: "https")?.absoluteString ?? ""
+                keyValue = HubHelper.url(NSURL(string: keyValue)!,
+                                         withScheme: "https")?.absoluteString ?? ""
             }
 
             connectionDictionary[keyName] = keyValue
