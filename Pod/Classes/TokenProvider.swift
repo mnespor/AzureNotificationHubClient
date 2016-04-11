@@ -19,7 +19,7 @@ class TokenProvider {
     private let stsHostName: NSURL
 
     init?(connectionDictionary: [String: String]) {
-        guard let endpoint = TokenProfider.∫tryUrl(connectionDictionary["endpoint"]) else {
+        guard let endpoint = TokenProvider.∫tryUrl(connectionDictionary["endpoint"]) else {
             return nil
         }
 
